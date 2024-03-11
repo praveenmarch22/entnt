@@ -59,11 +59,11 @@ import MatLamp2 from "../img/products/otherProducts/mat2.webp";
 import Comfy1 from "../img/products/otherProducts/comfy1.webp";
 import Comfy2 from "../img/products/otherProducts/comfy2.webp";
 
-export const items = [
+const items = [
   {
     id: 1,
     category: "chair",
-    stock: 10,
+    stock: 3,
     img: Img1,
     description: "Little Armchair Sheepskin",
     price: 986,
@@ -77,7 +77,7 @@ export const items = [
   {
     id: 2,
     category: "kitchen",
-    stock: 10,
+    stock: 5,
     img: Img2,
     description: "Pop-Up Toaster",
     price: 45,
@@ -91,7 +91,7 @@ export const items = [
   {
     id: 3,
     category: "lamp",
-    stock: 10,
+    stock: 8,
     img: Img3,
     description: "Lamp Light Blue",
     price: 79,
@@ -105,7 +105,7 @@ export const items = [
   {
     id: 4,
     category: "furniture",
-    stock: 10,
+    stock: 12,
     img: Img4,
     description: "Pulp Unit - 5 Compartments",
     price: 254,
@@ -119,7 +119,7 @@ export const items = [
   {
     id: 5,
     category: "lamp",
-    stock: 10,
+    stock: 4,
     img: Img5,
     description: "Golden Modern Light",
     price: 189,
@@ -133,7 +133,7 @@ export const items = [
   {
     id: 6,
     category: "skin-care",
-    stock: 10,
+    stock: 11,
     img: Img6,
     description: "Body Oil 200ml",
     price: 67,
@@ -147,7 +147,7 @@ export const items = [
   {
     id: 7,
     category: "lamp",
-    stock: 10,
+    stock: 9,
     img: Img7,
     description: "Black and White Lamp",
     price: 220,
@@ -161,7 +161,7 @@ export const items = [
   {
     id: 8,
     category: "furniture",
-    stock: 10,
+    stock: 14,
     img: Img8,
     description: "Gejst Shelf A Black Ash/Black",
     price: 115,
@@ -175,7 +175,7 @@ export const items = [
   {
     id: 9,
     category: "furniture",
-    stock: 10,
+    stock: 70,
     img: Img9,
     description: "Cube Lolo Vase Black",
     price: 161,
@@ -189,7 +189,7 @@ export const items = [
   {
     id: 10,
     category: "chair",
-    stock: 10,
+    stock: 9,
     img: Img10,
     description: "Traditional Armchair",
     price: 89,
@@ -203,7 +203,7 @@ export const items = [
   {
     id: 11,
     category: "lamp",
-    stock: 10,
+    stock: 13,
     img: Img11,
     description: "The Sun Pendant Black",
     price: 160,
@@ -217,7 +217,7 @@ export const items = [
   {
     id: 12,
     category: "lamp",
-    stock: 10,
+    stock: 12,
     img: Img12,
     description: "Simple Golden Lamp",
     price: 220,
@@ -231,7 +231,7 @@ export const items = [
   {
     id: 13,
     category: "skin-care",
-    stock: 10,
+    stock: 56,
     img: Img13,
     description: "Unbleached Cotton Pads 180",
     price: 33,
@@ -245,7 +245,7 @@ export const items = [
   {
     id: 14,
     category: "chair",
-    stock: 10,
+    stock: 98,
     img: Img14,
     description: "Oak Spanish Chair",
     price: 520,
@@ -259,7 +259,7 @@ export const items = [
   {
     id: 15,
     category: "chair",
-    stock: 10,
+    stock: 6,
     img: Img15,
     description: "Copenhagen Armchair",
     price: 330,
@@ -273,7 +273,7 @@ export const items = [
   {
     id: 16,
     category: "electronic",
-    stock: 10,
+    stock: 4,
     img: Img16,
     description: "Anti Dark Light",
     price: 120,
@@ -287,7 +287,7 @@ export const items = [
   {
     id: 17,
     category: "lamp",
-    stock: 10,
+    stock: 97,
     img: Img17,
     description: "Table Lamp",
     price: 75,
@@ -301,7 +301,7 @@ export const items = [
   {
     id: 18,
     category: "lamp",
-    stock: 10,
+    stock: 76,
     img: Img18,
     description: "Mat Black Lamp",
     price: 175,
@@ -315,7 +315,7 @@ export const items = [
   {
     id: 19,
     category: "chair",
-    stock: 10,
+    stock: 44,
     img: Img19,
     description: "Comfy Chair",
     price: 119,
@@ -329,7 +329,7 @@ export const items = [
   {
     id: 20,
     category: "skin-care",
-    stock: 10,
+    stock: 25,
     img: Img20,
     description: "Body Oil 50ml",
     price: 45,
@@ -341,3 +341,4 @@ export const items = [
     size: "10cm x 5cm",
   },
 ];
+export default items;

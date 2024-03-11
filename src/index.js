@@ -5,13 +5,39 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import DashBoard from "./components/DashBoard";
+import Products from "./components/Products";
+import Orders from "./components/Orders";
+import { BrowserRouter, createBrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <DashBoard />,
+      },
+      {
+        path: "/products",
+        element: <Products />,
+      },
+      {
+        path: "/orders",
+        element: <Orders />,
+      },
+    ],
+  },
+]);
 root.render(
   <React.StrictMode>
-    <Provider store={appStore}>
-      <App />
-    </Provider>
+    <BrowserRouter router={appRouter}>
+      <Provider store={appStore}>
+        <App />
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
