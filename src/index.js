@@ -8,7 +8,7 @@ import appStore from "./utils/appStore";
 import DashBoard from "./components/DashBoard";
 import Products from "./components/Products";
 import Orders from "./components/Orders";
-import { BrowserRouter, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const appRouter = createBrowserRouter([
@@ -31,13 +31,14 @@ const appRouter = createBrowserRouter([
     ],
   },
 ]);
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter router={appRouter}>
-      <Provider store={appStore}>
+    <Provider store={appStore}>
+      <RouterProvider router={appRouter}>
         <App />
-      </Provider>
-    </BrowserRouter>
+      </RouterProvider>
+    </Provider>
   </React.StrictMode>
 );
 

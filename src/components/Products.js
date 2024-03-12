@@ -12,7 +12,7 @@ const Products = () => {
         <Link to={"/"}>
           <h1 className="text-blue-400 underline cursor-pointer">Home</h1>
         </Link>
-        <h1 className="font-bold text-3xl my-3 mx-auto ">Categories</h1>
+        <h1 className="font-bold text-3xl my-3 mx-auto ">Products</h1>
         <Link to={"/orders"}>
           <h1 className="text-blue-400 underline cursor-pointer">Orders</h1>
         </Link>
