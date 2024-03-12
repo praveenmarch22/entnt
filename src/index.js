@@ -9,6 +9,7 @@ import DashBoard from "./components/DashBoard";
 import Products from "./components/Products";
 import Orders from "./components/Orders";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import AddProduct from "./components/AddProduct";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const appRouter = createBrowserRouter([
@@ -27,6 +28,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/orders",
         element: <Orders />,
+      },
+      {
+        path: "/addproduct",
+        element: <AddProduct />,
       },
     ],
   },

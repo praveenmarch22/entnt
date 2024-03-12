@@ -21,7 +21,7 @@ const ProductItem = ({ item, index }) => {
         <img
           src={item.img}
           alt="product1"
-          className="object-cover h-full w-full"
+          className="object-cover h-full w-full rounded-lg"
         />
       </div>
       <div className="  md:pt-4 w-[80%] ">
@@ -38,13 +38,13 @@ const ProductItem = ({ item, index }) => {
         {showEdit && (
           <div className="flex">
             <p
-              className="font-medium  md:font-semibold text-gray-500  pl-2"
+              className="font-medium  md:font-semibold text-gray-500  pl-2 hover:text-black"
               onClick={() => deleteProduct(index)}
             >
               Delete
             </p>
             <p
-              className="font-medium  md:font-semibold text-gray-500  pl-2"
+              className="font-medium  md:font-semibold text-gray-500  pl-2 hover:text-black"
               onClick={toggleEditForm}
             >
               Edit

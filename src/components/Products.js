@@ -19,11 +19,16 @@ const Products = () => {
           <h1 className="text-blue-400 underline cursor-pointer">Orders</h1>
         </Link>
       </div>
-      <div
-        className="text-blue-600 underline cursor-pointer text-center my-2"
-        onClick={() => dispatch(showEdits())}
-      >
-        Edit products
+      <div className="text-center md:flex md:justify-center md:items-center mx-auto w-[40%] md:w-[100%]">
+        <div
+          className=" w-[80%]  border-2 cursor-pointer text-center my-2 mx-3 p-2 md:w-[10%] hover:text-white hover:bg-gray-900 text-black rounded-lg"
+          onClick={() => dispatch(showEdits())}
+        >
+          Edit/Delete
+        </div>
+        <div className="w-[80%] border-2  cursor-pointer text-center my-2 mx-3 p-2 md:w-[10%] hover:text-white hover:bg-gray-900 text-black rounded-lg">
+          <Link to={"/addproduct"}> Add Product</Link>
+        </div>
       </div>
       <div className="mt-2 flex flex-wrap justify-center items-center">
         {items.map((item, index) => (

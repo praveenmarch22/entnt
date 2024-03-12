@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import allitems from "../components/AllData";
+import allitems from "../utils/productsMockData";
 
 const productSlice = createSlice({
   name: "products",
@@ -13,14 +13,14 @@ const productSlice = createSlice({
     },
     removeItem: (state, action) => {
       const itemsAfterDeletion = state.items.filter(
-        (e, index) => index != action.payload
+        (e, index) => index !== action.payload
       );
       state.items = itemsAfterDeletion;
     },
     editItem: (state, action) => {
       let editindex = -1;
       for (let i = 0; i < state.items.length; i++) {
-        if (state.items[i].id == action.payload.editedId) {
+        if (state.items[i].id === action.payload.editedId) {
           editindex = i;
           break;
         }

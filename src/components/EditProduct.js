@@ -37,6 +37,7 @@ const EditProduct = ({ item, onClose }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              required
             />
             <label
               htmlFor="description"
@@ -49,6 +50,7 @@ const EditProduct = ({ item, onClose }) => {
               value={stock}
               onChange={(e) => setStock(e.target.value)}
               className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              required
             />
           </div>
           <label
@@ -62,6 +64,7 @@ const EditProduct = ({ item, onClose }) => {
             value={price}
             onChange={(e) => setPrice(e.target.value)}
             className="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            required
           />
 
           <div className="flex justify-between mt-2">
