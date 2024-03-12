@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import items from "../components/AllData";
+import allitems from "../components/AllData";
 
 const productSlice = createSlice({
   name: "products",
   initialState: {
-    items: [...items],
+    items: [...allitems],
+    showEdit: false,
   },
   reducers: {
     addItem: (state, action) => {
@@ -12,13 +13,32 @@ const productSlice = createSlice({
     },
     removeItem: (state, action) => {
       const itemsAfterDeletion = state.items.filter(
-        (e) => e.id != action.payload.id
+        (e, index) => index != action.payload
       );
-      return itemsAfterDeletion;
+      state.items = itemsAfterDeletion;
+    },
+    editItem: (state, action) => {
+      let editindex = -1;
+      for (let i = 0; i < state.items.length; i++) {
+        if (state.items[i].id == action.payload.editedId) {
+          editindex = i;
+          break;
+        }
+      }
+      const { editedName, editedPrice, editedStock } = action.payload;
+      const editeditems = [...state.items];
+      editeditems[editindex].name = editedName;
+      editeditems[editindex].price = editedPrice;
+      editeditems[editindex].stock = editedStock;
+      state.items = [...editeditems];
+    },
+    showEdits: (state) => {
+      state.showEdit = !state.showEdit;
     },
   },
 });
 
-export const { addItem, removeItem } = productSlice.actions;
+export const { addItem, removeItem, showEdits, editItem } =
+  productSlice.actions;
 
 export default productSlice.reducer;

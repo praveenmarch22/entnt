@@ -19,13 +19,13 @@ import Img18 from "../img/products/18.png";
 import Img19 from "../img/products/19.jpg";
 import Img20 from "../img/products/20r.jpg";
 
-const items = [
+const allitems = [
   {
     id: 1,
     category: "chair",
     stock: 3,
     img: Img1,
-    description: "Little Armchair Sheepskin",
+    name: "Little Armchair Sheepskin",
     price: 986,
   },
   {
@@ -33,7 +33,7 @@ const items = [
     category: "kitchen",
     stock: 5,
     img: Img2,
-    description: "Pop-Up Toaster",
+    name: "Pop-Up Toaster",
     price: 45,
   },
   {
@@ -41,7 +41,7 @@ const items = [
     category: "lamp",
     stock: 8,
     img: Img3,
-    description: "Lamp Light Blue",
+    name: "Lamp Light Blue",
     price: 79,
   },
   {
@@ -49,7 +49,7 @@ const items = [
     category: "furniture",
     stock: 12,
     img: Img4,
-    description: "Pulp Unit - 5 Compartments",
+    name: "Pulp Unit - 5 Compartments",
     price: 254,
   },
   {
@@ -57,7 +57,7 @@ const items = [
     category: "lamp",
     stock: 4,
     img: Img5,
-    description: "Golden Modern Light",
+    name: "Golden Modern Light",
     price: 189,
   },
   {
@@ -65,7 +65,7 @@ const items = [
     category: "skin-care",
     stock: 11,
     img: Img6,
-    description: "Body Oil 200ml",
+    name: "Body Oil 200ml",
     price: 67,
   },
   {
@@ -73,7 +73,7 @@ const items = [
     category: "lamp",
     stock: 9,
     img: Img7,
-    description: "Black and White Lamp",
+    name: "Black and White Lamp",
     price: 220,
   },
   {
@@ -81,7 +81,7 @@ const items = [
     category: "furniture",
     stock: 14,
     img: Img8,
-    description: "Gejst Shelf A Black Ash/Black",
+    name: "Gejst Shelf A Black Ash/Black",
     price: 115,
   },
   {
@@ -89,7 +89,7 @@ const items = [
     category: "furniture",
     stock: 70,
     img: Img9,
-    description: "Cube Lolo Vase Black",
+    name: "Cube Lolo Vase Black",
     price: 161,
   },
   {
@@ -97,7 +97,7 @@ const items = [
     category: "chair",
     stock: 9,
     img: Img10,
-    description: "Traditional Armchair",
+    name: "Traditional Armchair",
     price: 89,
   },
   {
@@ -105,7 +105,7 @@ const items = [
     category: "lamp",
     stock: 13,
     img: Img11,
-    description: "The Sun Pendant Black",
+    name: "The Sun Pendant Black",
     price: 160,
   },
   {
@@ -113,7 +113,7 @@ const items = [
     category: "lamp",
     stock: 12,
     img: Img12,
-    description: "Simple Golden Lamp",
+    name: "Simple Golden Lamp",
     price: 220,
   },
   {
@@ -121,7 +121,7 @@ const items = [
     category: "skin-care",
     stock: 56,
     img: Img13,
-    description: "Unbleached Cotton Pads 180",
+    name: "Unbleached Cotton Pads 180",
     price: 33,
   },
   {
@@ -129,7 +129,7 @@ const items = [
     category: "chair",
     stock: 98,
     img: Img14,
-    description: "Oak Spanish Chair",
+    name: "Oak Spanish Chair",
     price: 520,
   },
   {
@@ -137,7 +137,7 @@ const items = [
     category: "chair",
     stock: 6,
     img: Img15,
-    description: "Copenhagen Armchair",
+    name: "Copenhagen Armchair",
     price: 330,
   },
   {
@@ -145,7 +145,7 @@ const items = [
     category: "electronic",
     stock: 4,
     img: Img16,
-    description: "Anti Dark Light",
+    name: "Anti Dark Light",
     price: 120,
   },
   {
@@ -153,7 +153,7 @@ const items = [
     category: "lamp",
     stock: 97,
     img: Img17,
-    description: "Table Lamp",
+    name: "Table Lamp",
     price: 75,
   },
   {
@@ -161,7 +161,7 @@ const items = [
     category: "lamp",
     stock: 76,
     img: Img18,
-    description: "Mat Black Lamp",
+    name: "Mat Black Lamp",
     price: 175,
   },
   {
@@ -169,7 +169,7 @@ const items = [
     category: "chair",
     stock: 44,
     img: Img19,
-    description: "Comfy Chair",
+    name: "Comfy Chair",
     price: 119,
   },
   {
@@ -177,8 +177,8 @@ const items = [
     category: "skin-care",
     stock: 25,
     img: Img20,
-    description: "Body Oil 50ml",
+    name: "Body Oil 50ml",
     price: 45,
   },
 ];
-export default items;
+export default allitems;
