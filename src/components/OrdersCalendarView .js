@@ -21,7 +21,7 @@ const OrdersCalendarView = () => {
   }, []);
 
   const handleEventClick = (event) => {
-    console.log("Clicked Event:", event);
+    //console.log("Clicked Event:", event);
   };
 
   return (
