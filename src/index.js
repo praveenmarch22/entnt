@@ -10,6 +10,7 @@ import Products from "./components/Products";
 import Orders from "./components/Orders";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AddProduct from "./components/AddProduct";
+import OrdersCalendarView from "./components/OrdersCalendarView ";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const appRouter = createBrowserRouter([
@@ -32,6 +33,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/addproduct",
         element: <AddProduct />,
+      },
+      {
+        path: "/calenderview",
+        element: <OrdersCalendarView />,
       },
     ],
   },

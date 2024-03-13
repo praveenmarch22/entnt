@@ -8,8 +8,8 @@ const getRandomProducts = (products) => {
 };
 
 const getRandomDate = () => {
-  const startDate = new Date(2023, 0, 1);
-  const endDate = new Date("Thu Feb 29 2024");
+  const startDate = new Date(2024, 0, 1);
+  const endDate = new Date("Thu May 29 2024");
   const randomTime =
     startDate.getTime() +
     Math.random() * (endDate.getTime() - startDate.getTime());
