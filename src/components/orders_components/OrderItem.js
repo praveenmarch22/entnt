@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { deleteOrder, updateOrderStatus } from "../utils/orderSlice";
+import { deleteOrder, updateOrderStatus } from "../../utils/orderSlice";
 import OrderDetails from "./OrderDetails";
 
 const OrderItem = ({ orderitem }) => {

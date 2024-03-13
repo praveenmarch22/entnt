@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { editItem } from "../utils/productSlice";
+import { editItem } from "../../utils/productSlice";
 
 const EditProduct = ({ item, onClose }) => {
   const [name, setName] = useState(item.name);

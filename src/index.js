@@ -6,11 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import DashBoard from "./components/DashBoard";
-import Products from "./components/Products";
-import Orders from "./components/Orders";
+import AddProduct from "./components/product_components/AddProduct";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import AddProduct from "./components/AddProduct";
-import OrdersCalendarView from "./components/OrdersCalendarView ";
+import Products from "./components/product_components/Products";
+import OrdersCalendarView from "./components/orders_components/OrdersCalendarView ";
+import Orders from "./components/orders_components/Orders";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const appRouter = createBrowserRouter([

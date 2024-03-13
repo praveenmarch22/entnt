@@ -2,7 +2,7 @@ import React from "react";
 import ProductItem from "./ProductItem";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { showEdits } from "../utils/productSlice";
+import { showEdits } from "../../utils/productSlice";
 
 const Products = () => {
   const items = useSelector((store) => store.allItems.items);

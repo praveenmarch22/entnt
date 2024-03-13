@@ -13,7 +13,7 @@ const OrdersCalendarView = () => {
   useEffect(() => {
     const eventsArray = mockOrders.map((order) => ({
       id: order.orderId,
-      title: `Order ${order.orderId} - ${order.customerName}`,
+      title: `Order  Id ${order.orderId} -  ${order.customerName}`,
       start: moment(order.orderDate, "D MMM YYYY").toDate(),
       end: moment(order.orderDate, "D MMM YYYY").toDate(),
     }));

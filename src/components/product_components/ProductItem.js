@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeItem } from "../utils/productSlice";
+import { removeItem } from "../../utils/productSlice";
 import EditProduct from "./EditProduct";
 
 const ProductItem = ({ item, index }) => {
