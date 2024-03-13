@@ -1,11 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
-
 import { Link } from "react-router-dom";
+import OrderItem from "./OrderItem";
 
 const Orders = () => {
   const orders = useSelector((store) => store.orders.ordersData);
-  console.log(orders);
 
   return (
     <div className="mt-8">
@@ -18,6 +17,10 @@ const Orders = () => {
           <h1 className="text-blue-400 underline cursor-pointer">Products</h1>
         </Link>
       </div>
+
+      {orders.map((order, index) => (
+        <OrderItem key={index} orderitem={order} />
+      ))}
     </div>
   );
 };

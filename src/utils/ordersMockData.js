@@ -1,4 +1,4 @@
-import { names, statusOptions } from "./constants";
+import { monthNames, names, statusOptions } from "./constants";
 import allitems from "./productsMockData";
 
 const getRandomProducts = (products) => {
@@ -9,11 +9,17 @@ const getRandomProducts = (products) => {
 
 const getRandomDate = () => {
   const startDate = new Date(2023, 0, 1);
-  const endDate = new Date();
-  return new Date(
+  const endDate = new Date("Thu Feb 29 2024");
+  const randomTime =
     startDate.getTime() +
-      Math.random() * (endDate.getTime() - startDate.getTime())
-  );
+    Math.random() * (endDate.getTime() - startDate.getTime());
+  const randomDate = new Date(randomTime);
+
+  const day = randomDate.getDate();
+  const monthIndex = randomDate.getMonth();
+  const year = randomDate.getFullYear();
+
+  return `${day} ${monthNames[monthIndex]} ${year}`;
 };
 
 const generateMockOrderData = () => {

@@ -8,7 +8,12 @@ const orderSlice = createSlice({
   },
   reducers: {
     updateOrderStatus: (state, action) => {},
-    deleteOrder: (state, action) => {},
+    deleteOrder: (state, action) => {
+      const updatedOrders = state.ordersData.filter(
+        (order) => order.orderId !== action.payload.orderId
+      );
+      state.ordersData = updatedOrders;
+    },
   },
 });
 

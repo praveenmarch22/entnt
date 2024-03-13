@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const DashBoard = () => {
   const [showCategories, setShowCategories] = useState(true);
   const items = useSelector((store) => store.allItems.items);
+  const orders = useSelector((store) => store.orders.ordersData);
 
   return (
     <div className="w-full mt-8">
@@ -23,7 +24,7 @@ const DashBoard = () => {
             Total number of products : {items.length}
           </div>
           <div className=" mx-auto w-[90%] md:w-[50%] m-1 font-mono font-bold text-xl md:text-xl lg:text-3xl h-[100px] shadow-md shadow-gray-300 rounded-lg flex justify-center items-center">
-            Total number of orders : {items.length}
+            Total number of orders : {orders.length}
           </div>
         </div>
         <div>
