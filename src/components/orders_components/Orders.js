@@ -22,6 +22,25 @@ const Orders = () => {
           Orders Calender View
         </div>
       </Link>
+      <div className="w-[98%] md:w-[60%] flex justify-between mx-auto hover:shadow-sm  p-2 m-2 ">
+        <div className="flex justify-between w-full">
+          <div className="font-bold w-1/12 md:w-1/3 overflow-hidden overflow-ellipsis whitespace-nowrap text-xl">
+            Id
+          </div>
+          <div className="font-bold w-1/3 overflow-hidden overflow-ellipsis whitespace-nowrap text-xl">
+            Customer Name
+          </div>
+          <div className="font-bold w-1/3 overflow-hidden overflow-ellipsis whitespace-nowrap text-xl">
+            Date
+          </div>
+        </div>
+        <div className="font-bold w-1/5 overflow-hidden overflow-ellipsis whitespace-nowrap text-xl">
+          Status
+        </div>
+        <div className="font-bold w-1/5 overflow-hidden overflow-ellipsis whitespace-nowrap text-xl">
+          Edit/Delete
+        </div>
+      </div>
 
       {orders.map((order, index) => (
         <OrderItem key={index} orderitem={order} />
