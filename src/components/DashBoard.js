@@ -51,7 +51,7 @@ const DashBoard = () => {
             </span>
           </h1>
           {showCategories && (
-            <ul className="w-[90%] md:w-[50%] mx-auto mt-3">
+            <ul className="w-[90%] md:w-[50%] mx-auto mt-3 px-2 md:px-0">
               <li className="w-full font-mono font-bold text-lg md:text-2xl h-[40px] text-center shadow-sm shadow-gray-200 py-2">
                 Chair
               </li>
