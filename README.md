@@ -52,6 +52,8 @@
 
    - Before editing the product
 
+   - During editing the product
+
    - After editing the product
 
 5. And If you click on **Add Product** button You will be redirected to page where you can Add a product. Where you have to enter name, category, stock ,price and you have to add image also.And click on the **Add Product**. The product will be added and you can see the product in products page. And if you click on cancel the product will not be added.
