@@ -1,8 +1,8 @@
 ## **Technologies used**
 
-    - **React**
-    - **Redux**
-    - **TailwindCss**
+    - React
+    - Redux
+    - TailwindCss
 
 ## **You can access the react app at the following vercel link**
 
