@@ -6,7 +6,7 @@
 
 ## **You can access the react app at the following vercel link**
 
-    https://minimalisticecommerce.vercel.app/
+[https://minimalisticecommerce.vercel.app/](https://minimalisticecommerce.vercel.app/)
 
 ## **Follow the steps to run the project on your local machine**
 
