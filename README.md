@@ -12,7 +12,7 @@
 
 1.  Download node from the following website based on your OS and install it.
 
-            [https://nodejs.org/en/download](https://nodejs.org/en/download)
+    [https://nodejs.org/en/download](https://nodejs.org/en/download)
 
     - Run the following command on terminal to verify the installation.
 
@@ -20,7 +20,7 @@
 
 2.  Download git from the following website based on your OS and install it.
 
-            [https://git-scm.com/downloads](https://git-scm.com/downloads)
+    [https://git-scm.com/downloads](https://git-scm.com/downloads)
 
     - Run the following command on terminal to verify the installation.
 
