@@ -62,7 +62,7 @@
 
    - Adding the product
 
-   -After adding the product.
+   - After adding the product.
 
 6. Now click on the **Orders** either form the navbar or in the Products page itself. And it will be like given image.
 
