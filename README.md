@@ -64,7 +64,7 @@
    - After clicking **Delete**
      ![Deleting products](https://github.com/praveenmarch22/entnt-pics/blob/main/4.png)
 
-4. If you click on **Edit** a pop will be opened on the product itself where you can edit the name, stock and price of the product. And if you click **Save** it will update the details of the product. You can "Cancel" it if you want to.
+4. If you click on **Edit** a popup will be opened on the product itself where you can edit the name, stock and price of the product. And if you click **Save** it will update the details of the product. You can "Cancel" it if you want to.
 
    - Before editing the product
      ![Editing products](https://github.com/praveenmarch22/entnt-pics/blob/main/5.png)
