@@ -130,7 +130,7 @@
 
     ![orders calender view](https://github.com/praveenmarch22/entnt-pics/blob/main/18.png)
 
-11. If you cnnot find any orders in that month that means there are no orders for that month. So top left you will find **Today**, **Back**, and **Next**. Click on the next may be you will find some orders like this.
+11. If you cannot find any orders in that month that means there are no orders for that month. So top left you will find **Today**, **Back**, and **Next**. Click on the next may be you will find some orders like this.
 
 ![orders calender view](https://github.com/praveenmarch22/entnt-pics/blob/main/19.png)
 
