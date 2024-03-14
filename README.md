@@ -126,7 +126,7 @@
 
      ![Updating orders](https://github.com/praveenmarch22/entnt-pics/blob/main/17.png)
 
-10. In orders page you can find **Orders Calender View** . If you click on that A calender will be opened. Like the following page becuse of the generated mockdata.
+10. In orders page you can find **Orders Calender View** . If you click on that A calender will be opened. Like the following page and may be it looks different for you because of the generated mockdata.
 
     ![orders calender view](https://github.com/praveenmarch22/entnt-pics/blob/main/18.png)
 
