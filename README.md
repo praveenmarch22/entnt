@@ -36,7 +36,7 @@
 
 5.  Now run the following command and it will install all dependencies.
 
-            git install
+            npm install
 
 6.  After installing everything run the following command to start the server.
 
