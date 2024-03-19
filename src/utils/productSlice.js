@@ -4,18 +4,22 @@ import allitems from "../utils/productsMockData";
 const productSlice = createSlice({
   name: "products",
   initialState: {
-    items: [...allitems],
+    items: localStorage.getItem("productItems")
+      ? JSON.parse(localStorage.getItem("productItems"))
+      : [...allitems],
     showEdit: false,
   },
   reducers: {
     addItem: (state, action) => {
       state.items.push(action.payload);
+      localStorage.setItem("productItems", JSON.stringify(state.items));
     },
     removeItem: (state, action) => {
       const itemsAfterDeletion = state.items.filter(
         (e, index) => index !== action.payload
       );
       state.items = itemsAfterDeletion;
+      localStorage.setItem("productItems", JSON.stringify(state.items));
     },
     editItem: (state, action) => {
       let editindex = -1;
@@ -31,6 +35,8 @@ const productSlice = createSlice({
       editeditems[editindex].price = editedPrice;
       editeditems[editindex].stock = editedStock;
       state.items = [...editeditems];
+
+      localStorage.setItem("productItems", JSON.stringify(state.items));
     },
     showEdits: (state) => {
       state.showEdit = !state.showEdit;

@@ -5,7 +5,9 @@ const orderSlice = createSlice({
   name: "orders",
 
   initialState: {
-    ordersData: [...mockOrders],
+    ordersData: localStorage.getItem("orderItems")
+      ? JSON.parse(localStorage.getItem("orderItems"))
+      : [...mockOrders],
   },
   reducers: {
     updateOrderStatus: (state, action) => {
@@ -16,12 +18,14 @@ const orderSlice = createSlice({
       }
       updatedOrders[i] = action.payload;
       state.ordersData = updatedOrders;
+      localStorage.setItem("orderItems", JSON.stringify(state.ordersData));
     },
     deleteOrder: (state, action) => {
       const updatedOrders = state.ordersData.filter(
         (order) => order.orderId !== action.payload.orderId
       );
       state.ordersData = updatedOrders;
+      localStorage.setItem("orderItems", JSON.stringify(state.ordersData));
     },
   },
 });
